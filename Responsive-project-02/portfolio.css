@@ -1,0 +1,726 @@
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.portfolio-main-container {
+ 
+  height: 100vh;
+  background-color: rgb(69, 34, 55);
+  
+}
+
+/*navigation bar css*/
+
+.navbar {
+  background-color:rgb(62, 66, 80) ;
+}
+
+.nav-button {
+  border: 1px solid white !important;
+  animation-name: navbutton;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  
+}
+
+.burger-icon {
+  color: white !important;
+  animation-name: navburger;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+ 
+}
+
+.nav-logo {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 4px 10px;
+ 
+}
+.navbar-brand {
+  animation-name: navlogo;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+ 
+
+}
+.navbar-brand:hover {
+ 
+
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  transform:  rotate(360deg) scale(0.9);
+  
+
+}
+
+
+.nav-button:hover {
+
+  transition-delay: 0.1s;
+  transition-duration: 2s;
+  transform: scale(1.2) !important;
+ 
+}
+
+@keyframes navbutton {
+ 
+  to{translate: -300px ;opacity: 0; }
+}
+
+
+@keyframes navburger {
+  to{rotate: 360deg;}
+}
+
+
+@keyframes navlogo {
+ 
+  to{translate: 300px ;rotate: 360deg; opacity: 0; }
+}
+
+
+.nav-link {
+  animation-name: navlink;
+  animation-duration: 2.5s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  
+  
+}
+.nav-link:hover {
+
+  transition-delay: 0.4s;
+  transition-duration: 2s;
+  color: rgb(217, 240, 68) !important;
+  
+
+
+}
+
+@keyframes navlink {
+  to{translate: 140px;opacity: 0;scale:0.5; font-size: 10px;}
+}
+
+
+/*navigation bar totally completed*/
+
+
+/*home section*/
+
+.home-container {
+  height: 100vh;
+  padding: 20px;
+  padding-top: 80px;
+  background-color: rgb(69, 34, 55);
+}
+
+
+.home-information {
+
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+}
+
+
+.aboutme-image {
+  height: 70vh;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  animation-name: profileimage;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.aboutme-image:hover {
+  transition-delay: 0.1s;
+  transition-duration: 2s;
+  transform: scale(0.9);
+  opacity: 0.8;
+
+
+}
+
+.p2 {
+  color: rgb(230, 230, 230);
+  font-weight: 450;
+  text-align: justify;
+  animation-name: p2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  cursor: pointer;
+}
+
+.contact-button {
+  color: rgb(255, 255, 255);
+  background-color:rgb(54, 146, 227) ;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  animation-name: contactbutton;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.read-button {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  animation-name: contactbutton;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.read-button:hover {
+  transition-delay: 0.1s;
+  transition-duration: 1s;
+  background-color: rgb(54, 146, 227) ;
+  border: 2px solid white;
+  transform: scale(0.9);
+}
+.contact-button:hover {
+  transition-delay: 0.1s;
+  transition-duration: 1s;
+  background-color:transparent;
+  cursor: pointer;
+  border: 2px solid white;
+  transform: scale(0.9);
+}
+
+
+.p1 {
+  color: rgb(255, 255, 0);
+  font-size: 25px;
+  font-weight: 500;
+  animation-name: p1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  cursor: pointer;
+}
+
+.p1:hover {
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  opacity: 0.9;
+  
+}
+
+.myname {
+  font-size: 30px;
+  color: white;
+  animation-name: myname;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.myname:hover {
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  cursor: pointer;
+  color: rgb(232, 230, 230);
+  opacity: 0.8;
+}
+
+
+@keyframes profileimage {
+ 
+  to { opacity: 0; }
+}
+
+
+
+
+@keyframes p1 {
+  to{transform: translate(100px); opacity: 0.5;color: rgb(247, 247, 139); scale:0 ;}
+  
+}
+
+@keyframes contactbutton {
+  to{transform: translate(200px); opacity: 0.5;color: rgb(247, 247, 139); scale:0 ;}
+  
+}
+
+
+
+@keyframes myname {
+  
+  to{transform: translateY(-40px);opacity: 0;}
+}
+
+@keyframes p2 {
+  to{transform: translateY(50px);opacity: 0;}
+}
+
+@keyframes informationcontainer {
+  to{transform: translateX(-40px); }
+}
+
+
+
+/*home section ends*/
+
+
+
+/*about me section*/
+
+.about-container {
+  height: 100vh;
+  padding: 20px;
+  padding-top: 80px;
+  background-color: rgb(69, 34, 55);
+}
+
+.p3 {
+  color: rgb(230, 230, 230);
+  font-weight: 450;
+  animation-name: p3;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  cursor: pointer;
+
+}
+
+
+@keyframes p3 {
+  to{transform: translateX(50px);opacity: 0;}
+}
+
+
+
+
+/*skills section*/
+
+.skill-container {
+  height: 100vh;
+  padding: 20px;
+  padding-top: 80px;
+  background-color: rgb(69, 34, 55);
+}
+
+.skill-heading-01 , .percent-heading-02{
+  color: white;
+  font-size: 20px;
+  animation-name: headings;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.skill-heading-01:hover , .percent-heading-02:hover{
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  cursor: pointer;
+  color: orange;
+  opacity: 0.8;
+}
+
+@keyframes headings {
+
+  to{transform: translateY(20px);opacity: 0;}
+  
+}
+
+
+
+.skills-bar {
+
+  height: 1vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  animation-name: insidebar;
+   animation-duration: 2s;
+   animation-delay: 0.2s;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-timing-function: ease-out;
+   animation-fill-mode: both;
+}
+
+
+.skills-inside-bar {
+   height: 1vh;
+   background-color: yellow;
+   border-radius: 10px;
+   width: 95%;
+   overflow-x: hidden;
+   animation-name: insidebar;
+   animation-duration: 2s;
+   animation-delay: 0.2s;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-timing-function: ease-out;
+   animation-fill-mode: both;
+   
+}
+
+.skills-inside-bar-css {
+  height: 1vh;
+  background-color: yellow;
+  border-radius: 10px;
+  width: 91%;
+  overflow-x: hidden;
+  animation-name: insidebar;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.skills-inside-bar-boot {
+
+  height: 1vh;
+  background-color: yellow;
+  border-radius: 10px;
+  width: 85%;
+  overflow-x: hidden;
+  animation-name: insidebar;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+
+}
+
+.skills-inside-bar-javascript {
+
+  height: 1vh;
+  background-color: yellow;
+  border-radius: 10px;
+  width: 30%;
+  overflow-x: hidden;
+  animation-name: insidebar;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+
+}
+
+.skills-inside-bar-python {
+
+
+  height: 1vh;
+  background-color: yellow;
+  border-radius: 10px;
+  width: 20%;
+  overflow-x: hidden;
+  animation-name: insidebar;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+
+}
+
+
+
+
+@keyframes insidebar {
+  from{color: white; opacity: 0;translate: -200px; scale: 0;}
+  to{color: yellow;opacity: 1;}
+}
+
+
+.skills-info 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.skills-percent {
+margin-left: auto;
+
+}
+
+
+
+/*education section*/
+
+.education-container {
+  height: 100vh;
+  padding: 20px;
+  padding-top:80px;
+  background-color: rgb(69, 34, 55);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+
+
+.education-information {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  display: flex;
+}
+
+
+.nxtwave-image {
+  height: 20vh;
+  border-radius: 4px;
+  animation-name: educationimages;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.nxtwave-image:hover {
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  border-radius: 10px;
+}
+
+@keyframes educationimages {
+
+  to{ opacity: 0;transform: translateY(50px);}
+}
+
+.year {
+  color: rgb(174, 255, 0);
+}
+
+.percent {
+ 
+  color: rgb(243, 162, 132);
+
+}
+
+
+.education-details:hover {
+
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*project section*/
+
+.project-container {
+  height: 100vh;
+  padding: 20px;
+  padding-top: 80px;
+  background-color: rgb(69, 34, 55);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+
+.project-1:hover , .project-2:hover {
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  transform: scale(1.1);
+  cursor: pointer;
+
+}
+
+
+/*contact me section*/
+
+.contact-container {
+  height: 70vh;
+  padding: 20px;
+  padding-top: 80px;
+  background-color:rgb(69, 34, 55);
+  position: relative;
+}
+
+
+input , textarea {
+
+ border-radius: 5px;
+ border: none;
+ width: 300px;
+ background-color: rgb(230, 230, 230);
+ color: white;
+
+}
+input:hover , textarea:hover {
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+
+.submit {
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 10px;
+  border: none;
+}
+
+.submit:hover {
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  color: rgb(0, 0, 0);
+  background-color: yellow;
+}
+
+
+.form-container {
+
+
+
+  animation-name: formcontainer;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+
+
+
+}
+
+@keyframes formcontainer {
+
+  to{opacity: 0; scale: 0.1;}
+  
+}
+
+
+/*footer section*/
+
+.footer-section {
+
+  height: 20vh;
+  background-color:rgb(62, 66, 80);
+  color: white;
+  height: 30vh;
+  text-align: center;
+  padding: 10px;
+}
+
+.icon {
+
+  font-size: 25px;
+  padding-left: 6px;
+  
+}
+
+
+.p5 {
+
+  font-size: 14px;
+  color: rgb(223, 220, 220);
+}
+
+.p6 {
+  font-size: 16px;
+}
+
+
+
+
+/*main headings*/
+
+
+.aboutme-main-heading {
+
+  color: rgb(233, 207, 104);
+  font-size: 35px;
+  opacity: 0.8;
+  animation-name: aboutme;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  
+
+}
+
+.aboutme-main-heading:hover {
+
+  transition-delay: 0.1s;
+  transition-duration: 2s;
+  color: rgb(224, 209, 148);
+  opacity: 1;
+  cursor: pointer;
+
+}
+
+
+
+@keyframes aboutme {
+    to{transform: translate(-200px);color: orange; opacity: 0.5;}
+  }
+
+
+
+
+
